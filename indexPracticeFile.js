@@ -113,3 +113,28 @@
 
 // const output = fizzBuzz();
 // console.log(output);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// CHALLENGE 1: LONGEST WORD
+// Return the longest word of a string
+// ex. longestWord('Hi there, my name is Brad') === 'there,'
+
+// work on this again
+
+function longestWord(sen) {
+    // // SOLUTION 1 - Return a single longest word
+    // match returns everything that regular expression returns true
+    const wordArr = sen.toLowerCase().match(/[a-z0-9]+/g);
+    // returns a sorted array b - a means it compares their length
+    const sorted = wordArr.sort((a, b) => b.length - a.length)
+
+    // returns what?????????????????????????
+    const LongestWordArr = sorted.filter(word => {
+        return word.length === sorted[0].length;
+    })
+
+}
+
+const output = longestWord('Hi there, my name is Brad');
+console.log(output);

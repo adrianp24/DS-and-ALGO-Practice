@@ -144,7 +144,7 @@
 // ex. maxCharacter('javascript') == 'a'
 // function maxCharacter(str) {
 //     const charMap = {};
-//     /* 
+//     /* .
 //     Map Looks
 //     {
 //         j:1,
