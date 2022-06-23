@@ -3,25 +3,25 @@
 // ex. longestWord('Hi there, my name is Brad') === 'there,'
 
 // function longestWord(sen) {
-// // SOLUTION 1 - Return a single longest word
+//     // SOLUTION 1 - Return a single longest word
 
-// // match returns the matching string of a regular expression
-// //any this between a-z and 0-9... g is global to not stop at first match
-// const wordArr = sen.toLowerCase().match(/[a-z0-9]+/g);
-// // sort by length
-// const sorted = wordArr.sort((a, b) => b.length - a.length)
-//     // SOLUTION 2 - Return an array and include multiple words if they have the same length
-//     // filter will return all words same length as first word
-// const longestWordArr = sorted.filter(word => {
-//     return word.length === sorted[0].length;
-// });
+//     // match returns the matching string of a regular expression
+//     //any this between a-z and 0-9... g is global to not stop at first match
+//     const wordArr = sen.toLowerCase().match(/[a-z0-9]+/g);
+//     // sort by length
+//     const sorted = wordArr.sort((a, b) => b.length - a.length)
+//         // SOLUTION 2 - Return an array and include multiple words if they have the same length
+//         // filter will return all words same length as first word
+//     const longestWordArr = sorted.filter(word => {
+//         return word.length === sorted[0].length;
+//     });
 
-// // SOLUTION 3 - Only return an array if multiple words, otherwise return a string
-// if (longestWordArr.length === 1) {
-//     return longestWordArr[0];
-// } else {
-//     return longestWordArr;
-// }
+//     // SOLUTION 3 - Only return an array if multiple words, otherwise return a string
+//     if (longestWordArr.length === 1) {
+//         return longestWordArr[0];
+//     } else {
+//         return longestWordArr;
+//     }
 
 // }
 // const output = longestWord('Hiiiii there, my name is Brad');
@@ -82,7 +82,7 @@
 // function formatStr(str) {
 //     return str
 //         //expression anything not a letter eliminated
-//         .replace(/[^w]/g, '')
+//         .replace(/[^\w]/g, '')
 //         .split('')
 //         // gets elements of array turns to string and orders to utf-16 code suquence
 //         .sort()
@@ -114,3 +114,4 @@
 // Call Function
 // const output = letterChanges('hello there');
 // console.log(output);
+//////////////////////////////////////////////////////////////////////////////////////////
